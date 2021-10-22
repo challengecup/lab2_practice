@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.css';
 import Ava from "../images/1.jpg";
-import { FaBeer, FaChrome } from 'react-icons/fa';
+import { FaBeer } from 'react-icons/fa';
 import { FaProjectDiagram } from 'react-icons/fa';
 import { MdOutlineDownloading } from 'react-icons/md';
 import { FaDatabase } from 'react-icons/fa';
@@ -20,8 +20,8 @@ const homepage = () => {
         <div class="wrapper">
             <div class="resume">
                 <div class="left">
-                    <div class="img_holder">
-                        <img src= {Ava} alt="picture"/>
+                    <div class="img_holder" >
+                        <img src= {Ava} alt="description" />
                     </div>
                     <div class="contact_wrap pb">
                         <div class="title">
@@ -98,7 +98,11 @@ const homepage = () => {
                                 <li>
                                     <div class="li_wrap">
                                         <div class="icon"><FaBook/></div>
-                                        <div class="text">Reading</div>
+                                        <div class="text reading">
+                                            <ul>
+                                                <li><a href="./reading.js">Reading</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
